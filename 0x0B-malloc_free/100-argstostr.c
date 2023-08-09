@@ -1,21 +1,29 @@
 #include "main.h"
 
 /**
+ * my_strlen - gets the length of a string array.
+ * @str: the string array.
+ *
+ * Return: length of the string.
+ */
+
+
+int my_strlen(const char *str)
+{
+	int length = 0;
+
+	while (str[length] != '\0')
+		length++;
+	return (length);
+}
+
+/**
  * argstostr - concatenates all the arguments of a program.
  * @ac: argument count.
  * @av: argument vector.
  *
  * Return: pointer of an array of char
  */
-
-
-int my_strlen(const char *str)
-{
-    int length = 0;
-    while (str[length] != '\0')
-        length++;
-    return length;
-}
 
 char *argstostr(int ac, char **av)
 {
