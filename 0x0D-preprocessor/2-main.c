@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	char* strng;
+	char *strng;
+
 	strng = __FILE__;
 
 	printf("%s\n", strng);
