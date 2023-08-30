@@ -1,6 +1,6 @@
 #include "lists.h"
 
-void free_listp(listp_t **head);
+
 
 /**
  * free_listp - frees a linked list
