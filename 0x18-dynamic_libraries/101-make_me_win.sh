@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -shared -o myprintf.so -fPIC test.c
-export LD_PRELOAD=./myprintf.so:$LD_LIBRARY_PATH
+wget -P /tmp/ https://raw.github.com/Lacctoff/alx-low_level_programming/master/0x18-dynamic_libraries/myprintf.so
+export LD_PRELOAD=/tmp/myprintf.so
